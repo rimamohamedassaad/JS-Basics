@@ -64,41 +64,47 @@ return arr;
 }
 
 const createNumbersArray = () => {
-
+const arr = [0,1,2,3,4,5];
+return arr;
 }
 
 const replaceElement = (languages) => {
-
+    languages.splice(2,1,'Javascript');
+    return languages;
 }
 
 const addElement = (languages) => {
-
+    languages.splice(4, 2,'Ruby', 'Python');
+    return languages;
 }
 
 const addNumberElement = (numbers) => {
-
+    numbers.unshift(-2,-1);
+    return numbers;
 }
 
 const removeFirst = (languages) => {
-
+languages.splice(0, 1);
+return languages;
 }
 
 const removeLast = (languages) => {
-
+    languages.splice(4, 1);
+    return languages;
 }
 
 const convertStrToArr = (social_arr) => {
-
+return social_arr.split(',');
 }
 
 const convertArrToStr = (languages) => {
-
+return languages.toString();
 }
 
 const sortArr = (social_arr) => {
-
+return social_arr.sort();
 }
 
 const invertArr = (social_arr) => {
-
+return social_arr.reverse();
 }
